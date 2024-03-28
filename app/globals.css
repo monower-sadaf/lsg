@@ -1,0 +1,278 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nextjs-portal {
+  display: none;
+}
+
+* {
+  font-family: 'Kalpurush', 'Arial', 'sans-serif';
+}
+
+
+.swiper-button-prev {
+  color: #198754 !important;
+}
+.swiper-button-next {
+  color: #198754 !important;
+}
+
+.angle > .swiper {
+  padding-left: 4em !important;
+  padding-right: 4em !important;
+}
+.angle > .swiper > .swiper-wrapper > .swiper-slide{
+  margin-right: 70px !important;
+  width: 211px !important;
+}
+
+.swiper-pagination {
+  background-color: #198754 !important;
+  bottom: 0 !important;
+}
+
+/* @media screen and (min-width: 1024px) {
+  .swiper-pagination {
+    bottom: 1.375em !important;
+  }
+} */
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: gray !important;
+}
+
+@layer utilities {
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #19a061;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .home-third-slider>.swiper>.swiper-pagination {
+    display: none !important;
+  }
+}
+
+
+.home-third-slider>.swiper>.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transform: none !important;
+}
+
+.home-third-slider>.swiper>.swiper-wrapper>.swiper-slide {
+  width: 11em !important;
+  margin: 1em !important;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: hsl(212.7, 26.8%, 83.9);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customBg1 {
+    background-image: url('../public/images/giar.png');
+
+  }
+
+/*   .backgroundImagegf3 {
+    background-image: url('../public/images/bg_data_image.png');
+  } */
+}
+
+@media screen and (min-width: 1024) {
+  .ainobidhibg {
+    background-image: url('../public/images/group6127.png');
+  }
+
+  .poripotro_bg {
+    background-image: url('../public/images/poripotro_bg.png');
+  }
+
+  .vumiseba_form_bg {
+    background-image: url('../public/images/vumiseba_form_bg.svg');
+  }
+
+  .poripotro_bg {
+    background-image: url('../public/images/poripotro_bg.png');
+  }
+}
+
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+
+.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.pagination-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.arrow::before {
+  position: relative;
+  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+  content: '';
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid #fff !important;
+  border-top: 0.12em solid #fff !important;
+}
+
+.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+
+.right {
+  transform: rotate(45deg);
+}
+
+
+.disabled {
+  pointer-events: none;
+}
+
+.arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+}
+
+.arrow:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.text-deepgreen {
+  --tw-text-opacity: 1;
+  color: rgb(54 140 114 / var(--tw-text-opacity));
+}

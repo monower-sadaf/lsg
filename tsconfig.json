@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/services/service-details/page.tsx", "app/(pages)/services/service-details/[slug].js", "app/components/Pagination/usePagination.js", "app/(pages)/faq/page.jsx", "app/components/Land/LandRelatedService.jsx", "app/(pages)/services/service-details/[slug]/page.jsx", "app/components/Carousel/Slider.jsx", "app/components/Notice.jsx", "app/components/Marquee.jsx", "app/(landing)/page.jsx", "app/components/Land/LandRelatedInfo.jsx", "app/components/Faq.jsx", "app/components/FestivalsImages.jsx", "app/components/LandRelatedVideos.jsx", "app/components/RecentUpdate.jsx", "app/layout.jsx", "app/components/Navbar.jsx"],
+  "exclude": ["node_modules"]
+}
